@@ -68,7 +68,7 @@ const Projects = () => {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
@@ -77,17 +77,6 @@ const Projects = () => {
                       {tag}
                     </span>
                   ))}
-                </div>
-
-                <div className="flex space-x-4">
-                  <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors duration-200">
-                    <Github size={20} />
-                    <span>Code</span>
-                  </button>
-                  <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors duration-200">
-                    <ExternalLink size={20} />
-                    <span>Live Demo</span>
-                  </button>
                 </div>
               </div>
 
